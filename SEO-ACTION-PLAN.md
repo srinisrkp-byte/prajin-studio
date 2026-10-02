@@ -34,12 +34,11 @@ Google Search Console is the #1 tool for ranking globally.
 
 ---
 
-### Step 2: Submit to Bing Webmaster Tools & IndexNow (Instant Indexing)
-Bing powers Yahoo, DuckDuckGo, and major AI assistants.
-
-1. Go to **[Bing Webmaster Tools](https://www.bing.com/webmasters)**.
-2. Sign in with Google and click **"Import from Google Search Console"** (Takes 10 seconds).
-3. Your pre-configured IndexNow key (`prajinindexnowkey2026`) is already baked into your headers and will trigger instant Bing bot indexing whenever you publish.
+### Step 2: Bing Webmaster Tools & Yahoo / IndexNow (COMPLETED ✅)
+- **Status:** **Verified & 100% Active**
+- **Sitemap Processed:** `https://prajinstudio.in/sitemap.xml` (Status: **Successfully processed**, 43 URLs discovered).
+- **IndexNow Key:** `prajinindexnowkey2026` active and firing live updates to Bing & Yahoo.
+- **Verification:** HTML Meta Tag (`FD4DE01DEF41BAD1E8D7F1819A018307`) & `BingSiteAuth.xml` deployed.
 
 ---
 
