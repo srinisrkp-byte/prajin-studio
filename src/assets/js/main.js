@@ -11,18 +11,35 @@
   const yrEl = $('#yr');
   if (yrEl) yrEl.textContent = new Date().getFullYear();
 
-  // Theme Management (dark/light)
+  // Theme Management: Always default to DARK on first visit across all devices.
+  // If the user explicitly clicked the toggle, remember their choice.
   const th = $('#theme');
   let mode = 'dark';
   try {
-    mode = localStorage.getItem('theme_preference') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-  } catch (e) {}
+    const saved = localStorage.getItem('theme_preference');
+    if (saved === 'light' || saved === 'dark') {
+      mode = saved;
+    } else {
+      mode = 'dark';
+    }
+  } catch (e) {
+    mode = 'dark';
+  }
   root.dataset.theme = mode;
+
+  function updateThemeButton(m) {
+    if (!th) return;
+    th.textContent = m === 'dark' ? '◐' : '☼';
+    th.setAttribute('aria-label', m === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    th.setAttribute('title', m === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  updateThemeButton(mode);
 
   if (th) {
     th.onclick = () => {
       mode = mode === 'dark' ? 'light' : 'dark';
       root.dataset.theme = mode;
+      updateThemeButton(mode);
       try {
         localStorage.setItem('theme_preference', mode);
       } catch (e) {}
