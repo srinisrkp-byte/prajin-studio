@@ -165,12 +165,15 @@ ${uniquePages.map(p => {
   const priority = isHome ? '1.0' : p.startsWith('/services/') ? '0.9' : p.startsWith('/work/') ? '0.85' : p.startsWith('/markets/') ? '0.8' : '0.7';
   const changefreq = isHome ? 'daily' : 'weekly';
 
+  const links = isHome
+    ? '\n    ' + config.languages.map(l => `<xhtml:link rel="alternate" hreflang="${l.code}" href="${liveDomain}${l.code === 'en' ? '/' : `/${l.code}/`}"/>`).join('\n    ')
+    : '';
+
   return `  <url>
     <loc>${liveDomain}${p}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
-    ${isHome ? config.languages.map(l => `<xhtml:link rel="alternate" hreflang="${l.code}" href="${liveDomain}${l.code === 'en' ? '/' : `/${l.code}/`}"/>`).join('\n    ') : ''}
+    <priority>${priority}</priority>${links}
   </url>`;
 }).join('\n')}
 </urlset>
