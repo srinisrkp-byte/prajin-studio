@@ -96,6 +96,10 @@ function processDir(srcDir, destDir) {
             content = content.replace('</head>', gaScript);
           }
 
+          // Inject Vercel Speed Insights & Web Analytics script for high-precision Core Web Vitals monitoring
+          const speedInsightsScript = `  <!-- Vercel Speed Insights -->\n  <script defer src="/_vercel/insights/script.js"></script>\n  <script defer src="/_vercel/speed-insights/script.js"></script>\n</body>`;
+          content = content.replace('</body>', speedInsightsScript);
+
           // Cache busting query string for CSS and JS assets
           const buildTimestamp = Date.now();
           content = content.replaceAll('assets/css/main.css', `assets/css/main.css?v=${buildTimestamp}`);
