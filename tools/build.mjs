@@ -89,6 +89,13 @@ function processDir(srcDir, destDir) {
             }
           }
 
+          // Inject Google Analytics GA4 script if configured
+          if (tokenMap['{{GA4_MEASUREMENT_ID}}']) {
+            const gaId = tokenMap['{{GA4_MEASUREMENT_ID}}'];
+            const gaScript = `  <!-- Google tag (gtag.js) -->\n  <script async src="https://www.googletagmanager.com/gtag/js?id=${gaId}"></script>\n  <script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', '${gaId}');\n  </script>\n</head>`;
+            content = content.replace('</head>', gaScript);
+          }
+
           // Cache busting query string for CSS and JS assets
           const buildTimestamp = Date.now();
           content = content.replaceAll('assets/css/main.css', `assets/css/main.css?v=${buildTimestamp}`);
