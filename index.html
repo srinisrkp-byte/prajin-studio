@@ -1,1476 +1,708 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
-
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Prajin Dezaa — Full-Stack Developer | Websites & Apps that Grow Businesses</title>
-  <meta name="description"
-    content="Prajin Dezaa builds websites, e-commerce stores, B2B apps, Android apps and custom software, plus Google/Meta ads and SEO. Based in Theni, Tamil Nadu, India.">
-  <meta property="og:title" content="Prajin Dezaa — I build websites & apps that grow businesses">
-  <meta property="og:description"
-    content="Full-stack developer from Theni. Websites, apps, custom software, ads & SEO.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Prajin Dezaa — Full-Stack Developer | Websites & Apps that Grow Businesses — Prajin and Team</title>
+  <meta name="description" content="Prajin Dezaa builds websites, e-commerce stores, B2B order apps, Android apps and custom software, plus Google/Meta ads and technical SEO. Based in Theni, Tamil Nadu, India.">
+  <link rel="canonical" href="{{DOMAIN}}/">
+  <link rel="alternate" hreflang="x-default" href="{{DOMAIN}}/">
+    <link rel="alternate" hreflang="en" href="{{DOMAIN}}/">
+    <link rel="alternate" hreflang="hi" href="{{DOMAIN}}/hi/">
+    <link rel="alternate" hreflang="ta" href="{{DOMAIN}}/ta/">
+    <link rel="alternate" hreflang="ar" href="{{DOMAIN}}/ar/">
+    <link rel="alternate" hreflang="es" href="{{DOMAIN}}/es/">
+    <link rel="alternate" hreflang="fr" href="{{DOMAIN}}/fr/">
+    <link rel="alternate" hreflang="de" href="{{DOMAIN}}/de/">
+    <link rel="alternate" hreflang="pt-br" href="{{DOMAIN}}/pt-br/">
+    <link rel="alternate" hreflang="id" href="{{DOMAIN}}/id/">
+    <link rel="alternate" hreflang="ms" href="{{DOMAIN}}/ms/">
+    <link rel="alternate" hreflang="ja" href="{{DOMAIN}}/ja/">
+
+  <!-- Search Engine Verifications -->
+  <meta name="google-site-verification" content="{{GOOGLE_VERIFICATION}}">
+  <meta name="msvalidate.01" content="{{BING_VERIFICATION}}">
+  <meta name="yandex-verification" content="{{YANDEX_VERIFICATION}}">
+  <meta name="baidu-site-verification" content="{{BAIDU_VERIFICATION}}">
+  <meta name="naver-site-verification" content="{{NAVER_VERIFICATION}}">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Prajin Dezaa — Full-Stack Developer | Websites & Apps that Grow Businesses — Prajin and Team">
+  <meta property="og:description" content="Prajin Dezaa builds websites, e-commerce stores, B2B order apps, Android apps and custom software, plus Google/Meta ads and technical SEO. Based in Theni, Tamil Nadu, India.">
+  <meta property="og:url" content="{{DOMAIN}}/">
+  <meta property="og:site_name" content="Prajin and Team — Full-Stack Web & App Development Studio">
+  <meta property="og:image" content="{{DOMAIN}}/assets/images/og-default.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Prajin Dezaa","jobTitle":"Full-Stack Developer","email":"prajindezaa142@gmail.com","telephone":"+919360970236","address":{"@type":"PostalAddress","addressLocality":"Theni","addressRegion":"Tamil Nadu","addressCountry":"IN"},"sameAs":["https://www.linkedin.com/in/prajin-dezaa-a3469543b","https://www.instagram.com/prajin_studio.in/"]}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
-    rel="stylesheet">
-  <style>
-    /* ===== DESIGN TOKENS — edit colours here ===== */
-    :root {
-      --bg: #050816;
-      --bg2: #0a1030;
-      --fg: #eef1ff;
-      --mut: #a3adcf;
-      --c1: #38bdf8;
-      --c2: #6366f1;
-      --c3: #a855f7;
-      --glass: rgba(255, 255, 255, .05);
-      --line: rgba(255, 255, 255, .12);
-      --grad: linear-gradient(120deg, var(--c1), var(--c2) 55%, var(--c3));
-      --d: 'Space Grotesk', system-ui, sans-serif;
-      --b: Inter, system-ui, sans-serif;
-      --s: 8px
-    }
+  <meta name="twitter:title" content="Prajin Dezaa — Full-Stack Developer | Websites & Apps that Grow Businesses — Prajin and Team">
+  <meta name="twitter:description" content="Prajin Dezaa builds websites, e-commerce stores, B2B order apps, Android apps and custom software, plus Google/Meta ads and technical SEO. Based in Theni, Tamil Nadu, India.">
+  <meta name="twitter:image" content="{{DOMAIN}}/assets/images/og-default.jpg">
 
-    [data-theme=light] {
-      --bg: #f4f6ff;
-      --bg2: #e6eaff;
-      --fg: #0b1030;
-      --mut: #475079;
-      --glass: rgba(255, 255, 255, .7);
-      --line: rgba(11, 16, 48, .14);
-      --c1: #0284c7;
-      --c2: #4f46e5;
-      --c3: #9333ea
-    }
+  <!-- Favicon & PWA Manifest -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#050816">
 
-    * {
-      box-sizing: border-box;
-      margin: 0
-    }
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/chatbot.css">
 
-    html {
-      scroll-behavior: auto
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font: 400 16px/1.65 var(--b);
-      overflow-x: hidden;
-      transition: background .4s
-    }
-
-    body:before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: 1;
-      pointer-events: none;
-      opacity: .05;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")
-    }
-
-    .mesh {
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      background: radial-gradient(40vmax 40vmax at 15% 10%, color-mix(in srgb, var(--c2) 28%, transparent), transparent), radial-gradient(35vmax 35vmax at 90% 30%, color-mix(in srgb, var(--c1) 20%, transparent), transparent), radial-gradient(40vmax 40vmax at 50% 100%, color-mix(in srgb, var(--c3) 22%, transparent), transparent);
-      animation: mv 18s ease-in-out infinite alternate
-    }
-
-    @keyframes mv {
-      to {
-        transform: scale(1.15) translate(2%, -2%)
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{DOMAIN}}/#person",
+      "name": "Prajin Dezaa",
+      "jobTitle": "Full-Stack Developer & Software Engineer",
+      "description": "Full-stack developer from Theni, Tamil Nadu, India. Specializing in high-performance business websites, B2B ordering platforms, e-commerce stores, Android PWAs, and technical SEO.",
+      "url": "{{DOMAIN}}/",
+      "email": "mailto:{{EMAIL}}",
+      "telephone": "+919360970236",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Theni",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/prajin-dezaa-a3469543b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "https://www.instagram.com/prajin_studio.in/",
+        "{{GITHUB}}"
+      ],
+      "knowsAbout": [
+        "Web Development",
+        "Progressive Web Apps",
+        "Android Development",
+        "Full-Stack Software Architecture",
+        "Technical SEO",
+        "E-Commerce Architecture",
+        "Three.js and WebGL",
+        "B2B Order Management Systems"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "{{DOMAIN}}/#organization",
+      "name": "Prajin and Team — Full-Stack Web & App Development Studio",
+      "url": "{{DOMAIN}}/",
+      "logo": "{{DOMAIN}}/assets/images/logo.png",
+      "image": "{{DOMAIN}}/assets/images/logo.png",
+      "founder": {
+        "@id": "{{DOMAIN}}/#person"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Worldwide"
+      },
+      "priceRange": "$$",
+      "telephone": "+919360970236",
+      "email": "{{EMAIL}}",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Theni",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Full-Stack Digital Product Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Business Website Development",
+              "description": "Fast, SEO-ready corporate and business websites engineered to establish authority and convert inbound traffic.",
+              "url": "{{DOMAIN}}/services/website-development/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-Commerce Stores & Online Ordering",
+              "description": "High-converting online shops with catalog management, cart, mobile checkout, and WhatsApp order dispatch.",
+              "url": "{{DOMAIN}}/services/ecommerce-development/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "B2B Order Management Platforms",
+              "description": "Custom portals, dealer dashboards, and ordering apps that replace messy phone calls and paper invoices.",
+              "url": "{{DOMAIN}}/services/b2b-order-management-apps/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Android Apps & Progressive Web Apps (PWA)",
+              "description": "Fast, installable apps that function seamlessly across any Android smartphone, iPhone, tablet, or desktop browser.",
+              "url": "{{DOMAIN}}/services/android-apps-and-pwa/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Software, CRM & ERP Systems",
+              "description": "Tailored internal tools: GST billing, real-time inventory management, customer portals, and workflow automation.",
+              "url": "{{DOMAIN}}/services/custom-software-development/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High-Converting Landing Pages & UI/UX Design",
+              "description": "Modern, cinematic user interfaces designed with psychological hierarchy that turn curious visitors into active leads.",
+              "url": "{{DOMAIN}}/services/ui-ux-and-landing-pages/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Technical SEO & Search Marketing",
+              "description": "Clean technical search engine optimization, Schema.org integration, and targeted Google/Meta ad campaign management.",
+              "url": "{{DOMAIN}}/services/seo-and-digital-ads/"
+            }
+          }
+        ]
       }
-    }
-
-    #gl {
-      position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      pointer-events: none;
-      transition: opacity .4s
-    }
-
-    main,
-    footer {
-      position: relative;
-      z-index: 2
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 70;
-      padding-top: calc(env(safe-area-inset-top, 0px) + 12px);
-      pointer-events: none
-    }
-
-    section {
-      scroll-margin-top: 88px
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none
-    }
-
-    img {
-      max-width: 100%;
-      display: block
-    }
-
-    :focus-visible {
-      outline: 2px solid var(--c1);
-      outline-offset: 3px;
-      border-radius: 8px
-    }
-
-    .skip {
-      position: absolute;
-      left: -999px;
-      top: 8px;
-      background: var(--c2);
-      color: #fff;
-      padding: 8px 16px;
-      z-index: 99;
-      border-radius: 8px
-    }
-
-    .skip:focus {
-      left: 8px
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: var(--d);
-      line-height: 1.05;
-      letter-spacing: -.03em
-    }
-
-    .wrap {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 24px
-    }
-
-    section {
-      padding: clamp(72px, 10vw, 136px) 0
-    }
-
-    .eyebrow {
-      font: 500 13px var(--d);
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: var(--c1);
-      margin-bottom: 16px
-    }
-
-    h2 {
-      font-size: clamp(34px, 5.5vw, 64px);
-      margin-bottom: 24px;
-      max-width: 16ch
-    }
-
-    .g {
-      background: var(--grad);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent
-    }
-
-    .lead {
-      color: var(--mut);
-      max-width: 56ch;
-      font-size: clamp(16px, 1.6vw, 19px)
-    }
-
-    #bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 3px;
-      width: 100%;
-      background: var(--grad);
-      transform: scaleX(0);
-      transform-origin: 0;
-      z-index: 60
-    }
-
-    /* nav */
-    nav {
-      position: relative;
-      margin: 0 auto;
-      width: min(1100px, calc(100% - 24px));
-      pointer-events: auto;
-      transition: background .3s, box-shadow .3s;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 8px 8px 8px 24px;
-      border-radius: 999px;
-      background: var(--glass);
-      border: 1px solid var(--line);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px)
-    }
-
-    .sc {
-      background: color-mix(in srgb, var(--bg) 82%, transparent) !important;
-      box-shadow: 0 12px 40px -14px rgba(0, 0, 0, .55)
-    }
-
-    .mh {
-      display: none
-    }
-
-    .links.o .mh {
-      display: block;
-      color: var(--c1) !important
-    }
-
-    .links.o a {
-      padding: 12px 0;
-      font-size: 18px
-    }
-
-    .logo {
-      font: 700 20px var(--d);
-      margin-right: auto
-    }
-
-    .logo b {
-      color: var(--c1)
-    }
-
-    .links {
-      display: flex;
-      gap: 24px;
-      font-size: 14px;
-      color: var(--mut)
-    }
-
-    .links a {
-      position: relative;
-      padding: 4px 0
-    }
-
-    .links a:after,
-    .ul:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 2px;
-      width: 100%;
-      background: var(--grad);
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform .35s
-    }
-
-    .links a:hover,
-    .links a.on {
-      color: var(--fg)
-    }
-
-    .links a:hover:after,
-    .links a.on:after {
-      transform: scaleX(1);
-      transform-origin: left
-    }
-
-    .btn {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 28px;
-      border-radius: 999px;
-      font: 600 15px var(--d);
-      border: 1px solid var(--line);
-      background: var(--glass);
-      color: var(--fg);
-      cursor: pointer;
-      overflow: hidden;
-      transition: box-shadow .3s
-    }
-
-    .btn.p {
-      background: var(--grad);
-      border: 0;
-      color: #fff;
-      box-shadow: 0 8px 32px -8px var(--c2)
-    }
-
-    .btn.p:hover {
-      box-shadow: 0 12px 44px -6px var(--c1)
-    }
-
-    .btn.s {
-      padding: 10px 20px;
-      font-size: 14px
-    }
-
-    .rip {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, .4);
-      transform: scale(0);
-      animation: rp .6s linear;
-      pointer-events: none
-    }
-
-    @keyframes rp {
-      to {
-        transform: scale(4);
-        opacity: 0
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{DOMAIN}}/#website",
+      "url": "{{DOMAIN}}/",
+      "name": "Prajin and Team Portfolio",
+      "publisher": {
+        "@id": "{{DOMAIN}}/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{DOMAIN}}/#webpage",
+      "url": "{{DOMAIN}}/",
+      "name": "Prajin Dezaa — Full-Stack Developer | Websites & Apps that Grow Businesses",
+      "description": "Prajin Dezaa builds websites, e-commerce stores, B2B order apps, Android PWAs and custom software, plus Google/Meta ads and technical SEO. Based in Theni, India, serving clients worldwide.",
+      "isPartOf": {
+        "@id": "{{DOMAIN}}/#website"
+      },
+      "about": {
+        "@id": "{{DOMAIN}}/#person"
       }
-    }
-
-    .ic {
-      width: 40px;
-      height: 40px;
-      padding: 0;
-      justify-content: center;
-      font-size: 18px
-    }
-
-    .burger {
-      display: none
-    }
-
-    /* hero */
-    .hero {
-      min-height: 100svh;
-      display: flex;
-      align-items: center;
-      padding: 120px 0 72px
-    }
-
-    .hero .wrap {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 24px;
-      align-items: center;
-      width: 100%
-    }
-
-    .badge {
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-      padding: 8px 16px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: var(--glass);
-      font-size: 13px;
-      color: var(--mut);
-      margin-bottom: 24px
-    }
-
-    .badge i {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #22c55e;
-      box-shadow: 0 0 12px #22c55e;
-      animation: pl 1.6s infinite
-    }
-
-    @keyframes pl {
-      50% {
-        opacity: .3
-      }
-    }
-
-    h1 {
-      font-size: clamp(44px, 8.4vw, 116px);
-      letter-spacing: -.05em;
-      margin-bottom: 24px
-    }
-
-    .ln {
-      display: block;
-      overflow: hidden;
-      padding-bottom: .08em
-    }
-
-    .ln>span {
-      display: inline-block
-    }
-
-    .cta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin: 32px 0 48px
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, auto);
-      gap: 24px 40px;
-      justify-content: start
-    }
-
-    .stats b {
-      display: block;
-      font: 700 clamp(28px, 3.4vw, 44px) var(--d)
-    }
-
-    .stats span {
-      font-size: 13px;
-      color: var(--mut)
-    }
-
-    .me {
-      justify-self: center;
-      position: relative;
-      width: min(300px, 64vw);
-      aspect-ratio: 1;
-      margin-top: 200px
-    }
-
-    .me:before {
-      content: "";
-      position: absolute;
-      inset: -14px;
-      border-radius: 50%;
-      background: var(--grad);
-      filter: blur(28px);
-      opacity: .7;
-      animation: pl 4s infinite
-    }
-
-    .me img {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid var(--line)
-    }
-
-    .hint {
-      position: absolute;
-      bottom: 24px;
-      left: 50%;
-      font-size: 12px;
-      color: var(--mut);
-      letter-spacing: .2em
-    }
-
-    /* glass card + spotlight */
-    .card {
-      position: relative;
-      border-radius: 24px;
-      background: var(--glass);
-      border: 1px solid var(--line);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      overflow: hidden
-    }
-
-    .card:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background: radial-gradient(300px circle at var(--mx, 50%) var(--my, 0), color-mix(in srgb, var(--c1) 22%, transparent), transparent 70%);
-      opacity: 0;
-      transition: opacity .3s
-    }
-
-    .card:hover:before {
-      opacity: 1
-    }
-
-    .bento {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-top: 48px
-    }
-
-    .bento .card {
-      padding: 24px;
-      min-height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end
-    }
-
-    .bento .card:nth-child(1),
-    .bento .card:nth-child(6) {
-      grid-column: span 2
-    }
-
-    .bento h3 {
-      font-size: 22px;
-      margin: 16px 0 8px;
-      letter-spacing: -.02em
-    }
-
-    .bento p {
-      font-size: 14px;
-      color: var(--mut)
-    }
-
-    .chip {
-      width: 52px;
-      height: 52px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      font-size: 26px;
-      background: var(--grad);
-      animation: fl 4s ease-in-out infinite;
-      box-shadow: 0 10px 30px -10px var(--c2)
-    }
-
-    @keyframes fl {
-      50% {
-        transform: translateY(-6px) rotate(-6deg)
-      }
-    }
-
-    /* work */
-    .work {
-      display: grid;
-      gap: 32px;
-      margin-top: 48px
-    }
-
-    .case {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      padding: 32px;
-      transform-style: preserve-3d;
-      perspective: 1000px;
-      will-change: transform
-    }
-
-    .case:nth-child(even) .vis {
-      order: 2
-    }
-
-    .case:after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background: radial-gradient(400px circle at var(--gx, 50%) var(--gy, 50%), rgba(255, 255, 255, .12), transparent 60%);
-      opacity: 0;
-      transition: opacity .3s
-    }
-
-    .case:hover:after {
-      opacity: 1
-    }
-
-    .vis {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      padding: 16px;
-      min-height: 420px
-    }
-
-    .phone {
-      position: relative;
-      width: 200px;
-      height: 400px;
-      border-radius: 30px;
-      border: 6px solid #1a1f3d;
-      background: #000;
-      overflow: hidden;
-      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .6), 0 0 0 1px var(--line);
-      transition: transform .5s cubic-bezier(.2, .8, .2, 1)
-    }
-
-    .phone.b {
-      width: 170px;
-      height: 340px;
-      margin-top: 64px
-    }
-
-    .phone img {
-      width: 100%;
-      transition: transform 5s linear
-    }
-
-    .case:hover .phone {
-      transform: translateY(-14px) rotateY(-6deg)
-    }
-
-    .case:hover .phone.b {
-      transform: translateY(8px) rotateY(-6deg)
-    }
-
-    .case:hover .phone img {
-      transform: translateY(calc(-100% + 388px))
-    }
-
-    .case:hover .phone.b img {
-      transform: translateY(calc(-100% + 328px))
-    }
-
-    .tag {
-      font: 500 12px var(--d);
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--c1)
-    }
-
-    .case h3 {
-      font-size: clamp(26px, 3.4vw, 40px);
-      margin: 8px 0 16px
-    }
-
-    .case dl {
-      display: grid;
-      gap: 12px;
-      margin-bottom: 16px;
-      font-size: 15px
-    }
-
-    .case dt {
-      font: 700 13px var(--d);
-      color: var(--fg);
-      text-transform: uppercase;
-      letter-spacing: .1em
-    }
-
-    .case dd {
-      color: var(--mut)
-    }
-
-    .pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 16px 0 24px
-    }
-
-    .pills span {
-      padding: 4px 12px;
-      border-radius: 999px;
-      font-size: 12px;
-      border: 1px solid var(--line);
-      color: var(--mut)
-    }
-
-    /* about */
-    .about {
-      display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 48px;
-      align-items: center
-    }
-
-    .about .me {
-      margin: 0;
-      width: 100%;
-      max-width: 380px
-    }
-
-    .about .me img {
-      border-radius: 32px
-    }
-
-    .about .me:before {
-      border-radius: 32px
-    }
-
-    .vals {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 32px
-    }
-
-    .vals .card {
-      padding: 24px
-    }
-
-    .vals h3 {
-      font-size: 20px;
-      margin-bottom: 8px
-    }
-
-    .vals p {
-      font-size: 14px;
-      color: var(--mut)
-    }
-
-    /* marquee */
-    .mq {
-      overflow: hidden;
-      padding: 24px 0;
-      border-block: 1px solid var(--line);
-      background: var(--glass);
-      -webkit-mask: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
-      mask: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent)
-    }
-
-    .mq div {
-      display: flex;
-      gap: 48px;
-      width: max-content;
-      animation: mq 32s linear infinite
-    }
-
-    .mq:hover div {
-      animation-play-state: paused
-    }
-
-    .mq span {
-      font: 700 clamp(20px, 3vw, 32px) var(--d);
-      white-space: nowrap;
-      color: var(--mut)
-    }
-
-    .mq span:nth-child(3n+1) {
-      color: var(--fg)
-    }
-
-    .mq span:after {
-      content: "✦";
-      margin-left: 48px;
-      color: var(--c2)
-    }
-
-    @keyframes mq {
-      to {
-        transform: translateX(-50%)
-      }
-    }
-
-    /* process */
-    .tl {
-      position: relative;
-      margin-top: 56px;
-      display: grid;
-      gap: 24px;
-      padding-left: 40px
-    }
-
-    .tl:before {
-      content: "";
-      position: absolute;
-      left: 11px;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: var(--line)
-    }
-
-    .tl i {
-      position: absolute;
-      left: 11px;
-      top: 0;
-      width: 2px;
-      height: 100%;
-      background: var(--grad);
-      transform-origin: top;
-      transform: scaleY(var(--p, 1))
-    }
-
-    .step {
-      padding: 24px 32px
-    }
-
-    .step:after {
-      content: "";
-      position: absolute;
-      left: -37px;
-      top: 32px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: var(--c1);
-      box-shadow: 0 0 16px var(--c1);
-      border: 3px solid var(--bg)
-    }
-
-    .step {
-      overflow: visible
-    }
-
-    .step small {
-      font: 500 13px var(--d);
-      color: var(--c1)
-    }
-
-    .step h3 {
-      font-size: 26px;
-      margin: 4px 0 8px
-    }
-
-    .step p {
-      color: var(--mut)
-    }
-
-    .tests {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 48px
-    }
-
-    .tests .card {
-      padding: 32px
-    }
-
-    .tests q {
-      display: block;
-      quotes: none;
-      margin-bottom: 24px;
-      font-size: 17px
-    }
-
-    .tests b {
-      display: block;
-      font-family: var(--d)
-    }
-
-    .tests span {
-      font-size: 13px;
-      color: var(--mut)
-    }
-
-    details {
-      border-bottom: 1px solid var(--line);
-      padding: 24px 0
-    }
-
-    summary {
-      cursor: pointer;
-      font: 600 20px var(--d);
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      gap: 16px
-    }
-
-    summary::-webkit-details-marker {
-      display: none
-    }
-
-    summary:after {
-      content: "+";
-      color: var(--c1);
-      font-size: 28px;
-      line-height: 1;
-      transition: transform .3s
-    }
-
-    details[open] summary:after {
-      transform: rotate(45deg)
-    }
-
-    details p {
-      color: var(--mut);
-      margin-top: 16px;
-      max-width: 62ch
-    }
-
-    .faq {
-      max-width: 820px;
-      margin-top: 40px
-    }
-
-    /* contact */
-    .final {
-      text-align: center;
-      padding: clamp(48px, 8vw, 96px) 24px;
-      border-radius: 40px
-    }
-
-    .final h2 {
-      margin: 0 auto 24px;
-      max-width: 14ch;
-      font-size: clamp(40px, 7vw, 88px)
-    }
-
-    .final .lead {
-      margin: 0 auto 32px
-    }
-
-    form {
-      display: grid;
-      gap: 12px;
-      max-width: 520px;
-      margin: 32px auto 0;
-      text-align: left
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 16px 20px;
-      border-radius: 16px;
-      border: 1px solid var(--line);
-      background: var(--glass);
-      color: var(--fg);
-      font: inherit
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      color: var(--mut)
-    }
-
-    footer {
-      padding: 40px 0 96px;
-      color: var(--mut);
-      font-size: 14px
-    }
-
-    footer .wrap {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px 32px;
-      justify-content: space-between
-    }
-
-    footer nav {
-      position: static;
-      transform: none;
-      width: auto;
-      background: none;
-      border: 0;
-      padding: 0;
-      backdrop-filter: none;
-      gap: 24px
-    }
-
-    .wa {
-      position: fixed;
-      right: 20px;
-      bottom: calc(20px + env(safe-area-inset-bottom, 0px));
-      z-index: 55;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #25D366;
-      color: #fff;
-      box-shadow: 0 10px 25px -4px rgba(37, 211, 102, 0.5), 0 4px 12px rgba(0, 0, 0, 0.18);
-      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
-      text-decoration: none;
-    }
-
-    .wa:hover {
-      transform: translateY(-4px) scale(1.06);
-      box-shadow: 0 14px 30px -2px rgba(37, 211, 102, 0.65), 0 6px 16px rgba(0, 0, 0, 0.25);
-    }
-
-    .wa:before {
-      content: "";
-      position: absolute;
-      inset: -2px;
-      border-radius: 50%;
-      border: 2px solid #25D366;
-      animation: pg 2.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-      pointer-events: none;
-    }
-
-    @keyframes pg {
-      0% {
-        transform: scale(0.95);
-        opacity: 0.8;
-      }
-      70% {
-        transform: scale(1.45);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1.5);
-        opacity: 0;
-      }
-    }
-
-    .wa-tooltip {
-      position: absolute;
-      right: calc(100% + 14px);
-      top: 50%;
-      transform: translateY(-50%) translateX(8px);
-      background: var(--bg2);
-      color: var(--fg);
-      border: 1px solid var(--line);
-      padding: 8px 14px;
-      border-radius: 999px;
-      font: 600 13px var(--d);
-      letter-spacing: -0.01em;
-      white-space: nowrap;
-      pointer-events: none;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
-      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.45);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-
-    .wa:hover .wa-tooltip {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(-50%) translateX(0);
-    }
-
-    .wa-online {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #25D366;
-      box-shadow: 0 0 10px #25D366;
-    }
-
-    @media (max-width: 768px) {
-      .wa-tooltip {
-        display: none !important;
-      }
-      .wa {
-        width: 54px;
-        height: 54px;
-        right: 16px;
-        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-      }
-      .wa svg {
-        width: 28px;
-        height: 28px;
-      }
-    }
-
-    /* intro + cursor */
-    #intro {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
-      background: var(--bg);
-      display: grid;
-      place-items: center;
-      font: 700 48px var(--d)
-    }
-
-    #intro b {
-      color: var(--c1)
-    }
-
-    .cur,
-    .dot {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 99;
-      pointer-events: none;
-      border-radius: 50%;
-      display: none
-    }
-
-    @media(hover:hover) and (pointer:fine) {
-
-      .cur,
-      .dot {
-        display: block
-      }
-
-      .cur {
-        width: 36px;
-        height: 36px;
-        border: 1.5px solid var(--c1);
-        margin: -18px 0 0 -18px;
-        transition: width .25s, height .25s, margin .25s, background .25s
-      }
-
-      .cur.h {
-        width: 64px;
-        height: 64px;
-        margin: -32px 0 0 -32px;
-        background: rgba(56, 189, 248, .12)
-      }
-
-      .dot {
-        width: 6px;
-        height: 6px;
-        margin: -3px 0 0 -3px;
-        background: var(--c1)
-      }
-
-      body.nc,
-      body.nc a,
-      body.nc button {
-        cursor: none
-      }
-    }
-
-    .anim .rv {
-      opacity: 0;
-      transform: translateY(32px)
-    }
-
-    @media(max-width:900px) {
-
-      .hero .wrap,
-      .case,
-      .about {
-        grid-template-columns: 1fr
-      }
-
-      .case:nth-child(even) .vis {
-        order: 0
-      }
-
-      .me {
-        margin-top: 16px
-      }
-
-      .bento {
-        grid-template-columns: 1fr 1fr
-      }
-
-      .bento .card:nth-child(n) {
-        grid-column: auto
-      }
-
-      .bento .card:nth-child(1) {
-        grid-column: span 2
-      }
-
-      .tests,
-      .vals {
-        grid-template-columns: 1fr
-      }
-
-      .stats {
-        grid-template-columns: repeat(2, auto)
-      }
-
-      .links {
-        display: none
-      }
-
-      .burger {
-        display: inline-flex
-      }
-
-      .links.o {
-        display: flex;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        padding: 24px;
-        border-radius: 24px;
-        background: var(--bg2);
-        border: 1px solid var(--line)
-      }
-
-      .vis {
-        min-height: 0
-      }
-    }
-
-    @media(max-width:520px) {
-      .bento {
-        grid-template-columns: 1fr
-      }
-
-      .bento .card:nth-child(1) {
-        grid-column: auto
-      }
-
-      .case {
-        padding: 16px
-      }
-
-      .phone.b {
-        display: none
-      }
-
-      .hint {
-        display: none
-      }
-
-      .btn.hire {
-        display: none
-      }
-    }
-
-    @media(prefers-reduced-motion:reduce) {
-      * {
-        animation: none !important;
-        transition: none !important
-      }
-    }
-  </style>
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{{DOMAIN}}/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a project cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Websites start from transparent custom quotes based on exact scope and feature requirements; apps and enterprise software are quoted after a free discovery session. You always receive a fixed, upfront proposal with zero hidden surprises."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does technical delivery take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard business or corporate website takes 1–2 weeks. E-commerce portals, B2B distributor apps, and custom software typically take 3–8 weeks depending on integration complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you manage hosting, domains and security setup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I configure the domain, DNS, global CDN edge caching (Cloudflare), HTTPS SSL certificates, and transactional email setup. You retain 100% full legal ownership of all assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What post-launch support and warranty is included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every deployment includes 30 days of free post-launch support and fixes, followed by flexible monthly maintenance plans covering speed audits, security, and feature updates."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
-
 <body class="nc">
-  <a class="skip" href="#work">Skip to content</a>
-  <div id="intro" aria-hidden="true">PD<b>.</b></div>
+  <a class="skip" href="#main-content">Skip to content</a>
   <div id="bar"></div>
   <div class="cur"></div>
   <div class="dot"></div>
-  <div class="mesh" aria-hidden="true"></div><canvas id="gl" aria-hidden="true"></canvas>
-
+  <div class="mesh" aria-hidden="true"></div>
+  <canvas id="gl" aria-hidden="true"></canvas>
   <header>
-    <nav aria-label="Main">
-      <a class="logo mag" href="#top" aria-label="Prajin Dezaa home">prajin<b>.</b>dev</a>
-      <div class="links" id="links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a
-          href="#process">Process</a><a href="#contact">Contact</a><a class="mh" href="#contact">Hire me →</a></div>
+    <nav aria-label="Main navigation">
+      <a class="logo mag brand-logo-link" href="./" aria-label="Prajin and Team — Home">
+        <img class="nav-emblem" src="./assets/images/nav-emblem.png" alt="Prajin and Team Emblem" width="36" height="36" fetchpriority="high">
+        <span class="brand-text">
+          <span class="brand-title">prajin<b>&</b>team</span>
+          <span class="brand-sub">FULL-STACK STUDIO</span>
+        </span>
+      </a>
+      <div class="links" id="links">
+        <a href="./work/">Work</a>
+        <a href="./services/">Services</a>
+        <a href="./about/">About</a>
+        <a href="./process/">Process</a>
+        <a href="./faq/">FAQ</a>
+        <a href="./blog/">Blog</a>
+        <a href="./contact/">Contact</a>
+        <a class="mh" href="./contact/">Hire us →</a>
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="lang-wrap">
+        <button class="lang-btn mag" id="langBtn" aria-label="Change language">
+          🌐 <span>EN</span> ▾
+        </button>
+        <div class="lang-menu" id="langMenu">
+          <a href="./" class="active">English</a>
+          <a href="./hi/" class="">हिन्दी (Hindi)</a>
+          <a href="./ta/" class="">தமிழ் (Tamil)</a>
+          <a href="./ar/" class="">العربية (Arabic)</a>
+          <a href="./es/" class="">Español (Spanish)</a>
+          <a href="./fr/" class="">Français (French)</a>
+          <a href="./de/" class="">Deutsch (German)</a>
+          <a href="./pt-br/" class="">Português (Brasil)</a>
+          <a href="./id/" class="">Bahasa Indonesia</a>
+          <a href="./ms/" class="">Bahasa Melayu</a>
+          <a href="./ja/" class="">日本語 (Japanese)</a>
+        </div>
+      </div>
+
       <button class="btn ic mag" id="theme" aria-label="Toggle light or dark mode">◐</button>
-      <a class="btn p s mag hire" href="#contact">Hire me</a>
+      <a class="btn p s mag hire" href="./contact/">Hire us</a>
       <button class="btn ic burger" id="bg" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
-  <main id="top">
+  <main id="main-content">
+    <!-- Hero Section with Real-Time 3D WebGL Canvas -->
     <section class="hero">
       <div class="wrap">
         <div>
-          <div class="badge"><i></i> Available for new projects · Theni, India</div>
-          <h1 aria-label="I build websites and apps that grow businesses."><span class="ln"><span>I
-                build</span></span><span class="ln"><span class="g">websites & apps</span></span><span
-              class="ln"><span>that grow</span></span><span class="ln"><span>businesses.</span></span></h1>
-          <p class="lead">Hi, I'm <b>Prajin Dezaa</b> — a full-stack developer who designs, builds and launches complete
-            digital products, then drives traffic with SEO and Google/Meta ads. One person, end to end.</p>
-          <div class="cta"><a class="btn p mag" href="#contact">Start a project →</a><a class="btn mag" href="#work">See
-              live work</a></div>
+          <div class="badge"><i></i> Available for new projects · Theni, India & Worldwide</div>
+          <h1 aria-label="I build websites and apps that grow businesses.">
+            <span class="ln"><span>We build</span></span>
+            <span class="ln"><span class="g">websites & apps</span></span>
+            <span class="ln"><span>that grow</span></span>
+            <span class="ln"><span>businesses.</span></span>
+          </h1>
+          <p class="lead">Hi, we are <strong>Prajin and Team</strong> — a full-stack design and engineering studio that builds and launches high-performance digital products, then drives real organic growth with technical SEO and Google/Meta campaigns. Complete solutions, end to end.</p>
+          <div class="cta">
+            <a class="btn p mag" href="./contact/">Start a project →</a>
+            <a class="btn mag" href="./#work">See live work</a>
+          </div>
           <div class="stats">
-            <div><b data-n="3">0</b><span>Live projects</span></div>
-            <div><b data-n="3">0</b><span>Platforms</span></div>
-            <div><b data-n="17" data-s="+">0</b><span>Countries reached</span></div>
-            <div><b data-n="100" data-s="%">0</b><span>End-to-end delivery</span></div>
+            <div><b data-n="3">3</b><span>Live platforms</span></div>
+            <div><b data-n="3">3</b><span>Target platforms</span></div>
+            <div><b data-n="17" data-s="+">17+</b><span>Countries reached</span></div>
+            <div><b data-n="100" data-s="%">100%</b><span>End-to-end delivery</span></div>
           </div>
         </div>
-        <div class="me tilt"><img class="pic" width="480" height="480" alt="Portrait of Prajin Dezaa in a tea garden">
+        <div class="me tilt">
+          <img class="pic" src="./assets/images/logo.png" width="480" height="480" alt="Prajin and Team — Full-Stack Development Studio Logo" fetchpriority="high">
         </div>
       </div>
       <div class="hint">SCROLL</div>
     </section>
 
-    <div class="mq" aria-label="Technologies">
-      <div id="mq"></div>
+    <!-- Infinite Tech Marquee -->
+    <div class="mq" aria-label="Core Engineering Technologies">
+      <div>
+        <span>Next.js</span><span>React</span><span>JavaScript (ES2024)</span><span>HTML5 & Vanilla CSS</span><span>PWA</span><span>Android APK</span><span>REST APIs</span><span>SQL & Cloud DB</span><span>WhatsApp API</span><span>Technical SEO</span><span>Google Ads</span><span>Meta Ads</span><span>Next.js</span><span>React</span><span>JavaScript (ES2024)</span><span>HTML5 & Vanilla CSS</span><span>PWA</span><span>Android APK</span><span>REST APIs</span><span>SQL & Cloud DB</span><span>WhatsApp API</span><span>Technical SEO</span><span>Google Ads</span><span>Meta Ads</span>
+      </div>
     </div>
 
+    <!-- Services Bento Grid -->
     <section id="services">
       <div class="wrap">
         <p class="eyebrow rv">What I build</p>
         <h2 class="rv">Every kind of <span class="g">digital product.</span></h2>
-        <p class="lead rv">From a first business website to custom software that runs a whole company.</p>
-        <div class="bento" id="bento"></div>
+        <p class="lead rv">From a first corporate website to custom enterprise cloud software that runs an entire business.</p>
+        <div class="bento">
+          
+          <article class="card rv">
+            <div class="chip" aria-hidden="true">🌐</div>
+            <h3>Custom Business Website Development</h3>
+            <p>Fast, SEO-ready corporate and business websites engineered to establish authority and convert inbound traffic.</p>
+            <div style="margin-top:16px;">
+              <a href="./services/website-development/" class="btn s mag" style="padding:6px 14px; font-size:12px;">Explore service →</a>
+            </div>
+          </article>
+          
+          <article class="card rv">
+            <div class="chip" aria-hidden="true">🛒</div>
+            <h3>E-Commerce Stores & Online Ordering</h3>
+            <p>High-converting online shops with catalog management, cart, mobile checkout, and WhatsApp order dispatch.</p>
+            <div style="margin-top:16px;">
+              <a href="./services/ecommerce-development/" class="btn s mag" style="padding:6px 14px; font-size:12px;">Explore service →</a>
+            </div>
+          </article>
+          
+          <article class="card rv">
+            <div class="chip" aria-hidden="true">📦</div>
+            <h3>B2B Order Management Platforms</h3>
+            <p>Custom portals, dealer dashboards, and ordering apps that replace messy phone calls and paper invoices.</p>
+            <div style="margin-top:16px;">
+              <a href="./services/b2b-order-management-apps/" class="btn s mag" style="padding:6px 14px; font-size:12px;">Explore service →</a>
+            </div>
+          </article>
+          
+          <article class="card rv">
+            <div class="chip" aria-hidden="true">📱</div>
+            <h3>Android Apps & Progressive Web Apps (PWA)</h3>
+            <p>Fast, installable apps that function seamlessly across any Android smartphone, iPhone, tablet, or desktop browser.</p>
+            <div style="margin-top:16px;">
+              <a href="./services/android-apps-and-pwa/" class="btn s mag" style="padding:6px 14px; font-size:12px;">Explore service →</a>
+            </div>
+          </article>
+          
+          <article class="card rv">
+            <div class="chip" aria-hidden="true">⚙️</div>
+            <h3>Custom Software, CRM & ERP Systems</h3>
+            <p>Tailored internal tools: GST billing, real-time inventory management, customer portals, and workflow automation.</p>
+            <div style="margin-top:16px;">
+              <a href="./services/custom-software-development/" class="btn s mag" style="padding:6px 14px; font-size:12px;">Explore service →</a>
+            </div>
+          </article>
+          
+          <article class="card rv">
+            <div class="chip" aria-hidden="true">🎨</div>
+            <h3>High-Converting Landing Pages & UI/UX Design</h3>
+            <p>Modern, cinematic user interfaces designed with psychological hierarchy that turn curious visitors into active leads.</p>
+            <div style="margin-top:16px;">
+              <a href="./services/ui-ux-and-landing-pages/" class="btn s mag" style="padding:6px 14px; font-size:12px;">Explore service →</a>
+            </div>
+          </article>
+          
+          <article class="card rv">
+            <div class="chip" aria-hidden="true">📈</div>
+            <h3>Technical SEO & Search Marketing</h3>
+            <p>Clean technical search engine optimization, Schema.org integration, and targeted Google/Meta ad campaign management.</p>
+            <div style="margin-top:16px;">
+              <a href="./services/seo-and-digital-ads/" class="btn s mag" style="padding:6px 14px; font-size:12px;">Explore service →</a>
+            </div>
+          </article>
+          
+        </div>
       </div>
     </section>
 
+    <!-- Selected Work Showcase -->
     <section id="work">
       <div class="wrap">
         <p class="eyebrow rv">Selected work</p>
         <h2 class="rv">Real products, <span class="g">live today.</span></h2>
-        <div class="work" id="workList"></div>
+        <div class="work">
+          
+          <article class="card case rv">
+            <div class="vis">
+              <div class="phone">
+                <img src="./assets/images/k1.jpg" alt="Kalasam Jaikrishna Industries chemical and camphor manufacturing export website" loading="lazy" width="400" height="800">
+              </div>
+              <div class="phone b">
+                <img src="./assets/images/k2.jpg" alt="Kalasam Jaikrishna Industries mobile screen preview" loading="lazy" width="400" height="800">
+              </div>
+            </div>
+            <div>
+              <p class="tag">Corporate Website & Global Export Portal</p>
+              <h3>Kalasam Jaikrishna Industries</h3>
+              <dl>
+                <div><dt>Problem</dt><dd>A camphor and chemical manufacturer with legacy manufacturing roots dating back to 1995—and exporting goods to over 17 countries—had no authoritative digital presence to verify legitimacy and attract direct international institutional buyers.</dd></div>
+                <div><dt>Solution</dt><dd>Engineered a high-performance corporate platform featuring an interactive product catalog with comprehensive laboratory specifications, dedicated inquiry pathways for OEM and export distributors, direct WhatsApp integration, and international technical SEO.</dd></div>
+                <div><dt>Key features</dt><dd>Dynamic product specification catalog with chemical purity grades · Dedicated multi-tier export, OEM, and bulk distributor inquiry flows · Sub-second load times engineered with lightweight semantic HTML and CSS · Automated WhatsApp lead dispatch allowing direct manufacturer communication · Structured data implementation allowing international B2B buyers to verify company credentials</dd></div>
+              </dl>
+              <div class="pills">
+                <span>Semantic HTML5</span><span>Modern CSS</span><span>JavaScript</span><span>Technical SEO</span><span>WhatsApp API</span>
+              </div>
+              <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
+                <a class="btn p s mag" href="https://kalasamjaikrishna.co.in" target="_blank" rel="noopener">Visit kalasamjaikrishna.co.in ↗</a>
+                <a class="btn s mag" href="./work/kalasam-jaikrishna-industries/">Read case study →</a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="card case rv">
+            <div class="vis">
+              <div class="phone">
+                <img src="./assets/images/j1.jpg" alt="JKI Orders B2B distributor ordering platform Android app and progressive web application" loading="lazy" width="400" height="800">
+              </div>
+              <div class="phone b">
+                <img src="./assets/images/j2.jpg" alt="JKI Orders B2B Platform mobile screen preview" loading="lazy" width="400" height="800">
+              </div>
+            </div>
+            <div>
+              <p class="tag">B2B Ordering Platform · Android APK · PWA</p>
+              <h3>JKI Orders B2B Platform</h3>
+              <dl>
+                <div><dt>Problem</dt><dd>Wholesale distributors placed orders through manual phone calls and disorganized WhatsApp messages. This led to frequent dispatch tracking errors, delays in sending GST invoices, and difficult reconciliation of customer payment ledgers.</dd></div>
+                <div><dt>Solution</dt><dd>Built a unified B2B digital ordering ecosystem: a friction-free customer portal, warehouse staff administrative back-office, a lightweight Android APK package, and an installable desktop Progressive Web App (PWA).</dd></div>
+                <div><dt>Key features</dt><dd>Simplified customer authentication using mobile number and secure 4-digit PIN · 1-tap repeat order functionality based on past buying history · Real-time warehouse dispatch status tracking and transport LR number logging · Automated GST invoice generation and printable statement ledgers · Installable PWA and standalone Android APK for field operators</dd></div>
+              </dl>
+              <div class="pills">
+                <span>Android APK</span><span>Progressive Web App</span><span>REST APIs</span><span>Relational Database</span><span>Cloud Back-Office</span>
+              </div>
+              <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
+                <a class="btn p s mag" href="https://jkiorders.in" target="_blank" rel="noopener">Visit jkiorders.in ↗</a>
+                <a class="btn s mag" href="./work/jki-orders-b2b-platform/">Read case study →</a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="card case rv">
+            <div class="vis">
+              <div class="phone">
+                <img src="./assets/images/a1.jpg" alt="Aparna Stores online grocery and supermarket e-commerce platform" loading="lazy" width="400" height="800">
+              </div>
+              <div class="phone b">
+                <img src="./assets/images/a2.jpg" alt="Aparna Stores E-Commerce mobile screen preview" loading="lazy" width="400" height="800">
+              </div>
+            </div>
+            <div>
+              <p class="tag">Mobile-First Grocery & Supermarket Store</p>
+              <h3>Aparna Stores E-Commerce</h3>
+              <dl>
+                <div><dt>Problem</dt><dd>A trusted Theni supermarket operating continuously since 1965 required an online shopping experience so local families and bulk institutional buyers could order groceries, household essentials, and bulk staples without waiting in checkout lines.</dd></div>
+                <div><dt>Solution</dt><dd>Engineered a rapid mobile-first e-commerce web application featuring intuitive category browsing, live search, promotional discounts, tiered bulk-pack pricing, dynamic cart and checkout, and automated WhatsApp order dispatch.</dd></div>
+                <div><dt>Key features</dt><dd>Lightning-fast product search with instant category filters · Tiered bulk-pack discount pricing engine for volume buyers · Frictionless mobile cart, checkout, and order history tracking · Direct integration with local home delivery logistics via WhatsApp alerts · Lightweight architecture achieving 95+ mobile performance score</dd></div>
+              </dl>
+              <div class="pills">
+                <span>E-Commerce Architecture</span><span>Mobile-First Design</span><span>Cart & Checkout Engine</span><span>WhatsApp Integration</span><span>Local SEO</span>
+              </div>
+              <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
+                <a class="btn p s mag" href="https://aparnastores.shop" target="_blank" rel="noopener">Visit aparnastores.shop ↗</a>
+                <a class="btn s mag" href="./work/aparna-stores-ecommerce/">Read case study →</a>
+              </div>
+            </div>
+          </article>
+          
+        </div>
       </div>
     </section>
 
+    <!-- About Me Section -->
     <section id="about">
       <div class="wrap about">
-        <div class="me tilt rv"><img class="pic" width="480" height="480" alt="Prajin Dezaa" loading="lazy"></div>
+        <div class="me tilt rv">
+          <img class="pic" src="./assets/images/logo.png" width="480" height="480" alt="Prajin and Team — Full-Stack Development Studio Logo" loading="lazy">
+        </div>
         <div>
-          <p class="eyebrow rv">About me</p>
+          <p class="eyebrow rv">About us</p>
           <h2 class="rv">17, from Theni. <span class="g">Shipping like a studio.</span></h2>
-          <p class="lead rv">I started building for local businesses and quickly learned that a good product is more
-            than pretty pixels — it has to load fast, be easy to use and actually bring in customers. So I do it all:
-            design, code, launch and growth. Every project I take on gets my full attention.</p>
+          <p class="lead rv">We started building for local businesses and quickly learned that a successful digital product is much more than pretty pixels — it must load instantly, remain effortlessly intuitive on mobile, and convert visitors into loyal clients. We take total ownership of design, clean code, deployment, and organic search optimization.</p>
           <div class="vals">
-            <div class="card rv">
-              <h3>Speed</h3>
-              <p>Fast sites, fast delivery, fast replies.</p>
-            </div>
-            <div class="card rv">
-              <h3>Quality</h3>
-              <p>Clean code, pixel-level polish, tested on real phones.</p>
-            </div>
-            <div class="card rv">
-              <h3>Honesty</h3>
-              <p>Clear scope, fair pricing, no surprises.</p>
-            </div>
+            <div class="card rv"><h3>Speed</h3><p>Fast sites, fast delivery, fast WhatsApp replies.</p></div>
+            <div class="card rv"><h3>Quality</h3><p>Clean semantic code, pixel-level polish, tested on real devices.</p></div>
+            <div class="card rv"><h3>Honesty</h3><p>Clear scope, transparent fixed quotes, zero surprises.</p></div>
+          </div>
+          <div style="margin-top:28px;">
+            <a href="./about/" class="btn p mag">Read my full background →</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- 4-Step Process -->
     <section id="process">
       <div class="wrap">
         <p class="eyebrow rv">Process</p>
         <h2 class="rv">From idea to <span class="g">growth.</span></h2>
-        <div class="tl" id="tl"><i></i></div>
+        <div class="tl" id="tl">
+          <i></i>
+          <div class="card step rv"><small>01</small><h3>Discover</h3><p>We talk business goals, customers and budget. I map project scope, timeline and the fastest path to positive ROI.</p></div>
+          <div class="card step rv"><small>02</small><h3>Design</h3><p>Wireframes and polished UI matching your exact brand — reviewed and approved before any production code is written.</p></div>
+          <div class="card step rv"><small>03</small><h3>Develop</h3><p>Clean, fast, accessible code with regular staging previews so you see genuine progress every step of the way.</p></div>
+          <div class="card step rv"><small>04</small><h3>Launch & Grow</h3><p>Domain, SSL, and edge CDN hosting setup, followed by technical SEO and advertising setup to win your first customers.</p></div>
+        </div>
       </div>
     </section>
 
+    <!-- Verified Client Testimonials -->
     <section>
       <div class="wrap">
         <p class="eyebrow rv">Kind words</p>
         <h2 class="rv">What clients say.</h2>
-        <div class="tests" id="tests"></div>
+        <div class="tests">
+          
+          <figure class="card rv">
+            <q>“For the past few days our company was facing low orders and few business connections. Once you launched our website, everything changed — we are now getting more export clients, distributors and enquiries.”</q>
+            <b>Kalasam Jaikrishna Industries</b>
+            <span>Executive Leadership · <a href="https://kalasamjaikrishna.co.in" target="_blank" rel="noopener" style="text-decoration:underline;">kalasamjaikrishna.co.in</a></span>
+          </figure>
+          
+          <figure class="card rv">
+            <q>“Thank you very much for this great work at such a fair price. Taking orders from our customers is now very easy for our company.”</q>
+            <b>JKI Orders</b>
+            <span>Operations & Logistics Manager · <a href="https://jkiorders.in" target="_blank" rel="noopener" style="text-decoration:underline;">jkiorders.in</a></span>
+          </figure>
+          
+          <figure class="card rv">
+            <q>“I didn't expect such a great result for such a small budget. I am very satisfied with the features and the price, and I will recommend your work to everyone I know.”</q>
+            <b>Aparna Stores (Est. 1965)</b>
+            <span>Store Management · <a href="https://aparnastores.shop" target="_blank" rel="noopener" style="text-decoration:underline;">aparnastores.shop</a></span>
+          </figure>
+          
+        </div>
       </div>
     </section>
 
-    <section>
+    <!-- Frequently Asked Questions -->
+    <section id="faq">
       <div class="wrap">
         <p class="eyebrow rv">FAQ</p>
-        <h2 class="rv">Good questions.</h2>
-        <div class="faq" id="faq"></div>
+        <h2 class="rv">Good questions, <span class="g">clear answers.</span></h2>
+        <div class="faq">
+          
+          <details class="rv">
+            <summary>How much does a project cost?</summary>
+            <p>Websites start from transparent custom quotes based on exact scope and feature requirements; apps and enterprise software are quoted after a free discovery session. You always receive a fixed, upfront proposal with zero hidden surprises.</p>
+          </details>
+          
+          <details class="rv">
+            <summary>How long does technical delivery take?</summary>
+            <p>A standard business or corporate website takes 1–2 weeks. E-commerce portals, B2B distributor apps, and custom software typically take 3–8 weeks depending on integration complexity.</p>
+          </details>
+          
+          <details class="rv">
+            <summary>Do you manage hosting, domains and security setup?</summary>
+            <p>Yes. I configure the domain, DNS, global CDN edge caching (Cloudflare), HTTPS SSL certificates, and transactional email setup. You retain 100% full legal ownership of all assets.</p>
+          </details>
+          
+          <details class="rv">
+            <summary>What post-launch support and warranty is included?</summary>
+            <p>Every deployment includes 30 days of free post-launch support and fixes, followed by flexible monthly maintenance plans covering speed audits, security, and feature updates.</p>
+          </details>
+          
+        </div>
       </div>
     </section>
 
+    <!-- Contact CTA Section -->
     <section id="contact">
       <div class="wrap">
         <div class="card final rv">
           <h2>Let's build something <span class="g">great.</span></h2>
-          <p class="lead">Tell me about your business and idea. I reply on WhatsApp, usually within a few hours.</p>
-          <a class="btn p mag" id="waBtn" href="#" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
-          <form id="form"><input id="fn" placeholder="Your name" aria-label="Your name" required><textarea id="fm"
-              rows="4" placeholder="What do you want to build?" aria-label="Your message" required></textarea><button
-              class="btn mag" type="submit">Send via WhatsApp</button></form>
+          <p class="lead">Tell me about your business goals and ideas. I reply directly on WhatsApp, usually within a few hours.</p>
+          <a class="btn p mag" id="waBtn" href="https://wa.me/{{WHATSAPP}}?text=Hi%20Prajin%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+          <form id="form" data-wa="{{WHATSAPP}}">
+            <input id="fn" placeholder="Your name" aria-label="Your name" required>
+            <textarea id="fm" rows="4" placeholder="What do you want to build? Tell me about your business..." aria-label="Your message" required></textarea>
+            <button class="btn mag" type="submit">Send via WhatsApp</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
+    <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="logo" style="margin-bottom:12px;"><img class="nav-logo" src="./assets/images/logo.png" alt="Prajin and Team Logo" width="32" height="32"><span>prajin<b>&</b>team</span></p>
+          <p style="max-width:32ch; line-height:1.6; margin-bottom:16px;">
+            Full-stack engineering and design studio led by Prajin from Theni, Tamil Nadu, India. Building high-performance websites, e-commerce stores, B2B portals, and custom cloud software worldwide.
+          </p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener">+91 93609 70236</a></p>
+          <p><strong>Email:</strong> <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+        </div>
 
-  <footer>
-    <div class="wrap"><span>© <span id="yr"></span> Prajin Dezaa · Theni, Tamil Nadu, India</span>
-      <nav aria-label="Social"><a id="li" href="#" target="_blank" rel="noopener">LinkedIn</a><a id="ig" href="#"
-          target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=61594798122881" target="_blank" rel="noopener" aria-label="Prajin Studio on Facebook">Facebook</a><a id="em" href="#">Email</a></nav>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="./services/website-development/">Business Websites</a></li>
+            <li><a href="./services/ecommerce-development/">E-Commerce Stores</a></li>
+            <li><a href="./services/b2b-order-management-apps/">B2B Order Portals</a></li>
+            <li><a href="./services/android-apps-and-pwa/">Android Apps & PWA</a></li>
+            <li><a href="./services/custom-software-development/">Custom Software / ERP</a></li>
+            <li><a href="./services/ui-ux-and-landing-pages/">Landing Pages & UI/UX</a></li>
+            <li><a href="./services/seo-and-digital-ads/">SEO & Google/Meta Ads</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Case Studies</h4>
+          <ul>
+            <li><a href="./work/kalasam-jaikrishna-industries/">Kalasam Industries (Export)</a></li>
+            <li><a href="./work/jki-orders-b2b-platform/">JKI Orders (B2B Platform)</a></li>
+            <li><a href="./work/aparna-stores-ecommerce/">Aparna Stores (E-Commerce)</a></li>
+          </ul>
+          <h4 style="margin-top:24px;">Company</h4>
+          <ul>
+            <li><a href="./about/">About Us</a></li>
+            <li><a href="./process/">4-Step Process</a></li>
+            <li><a href="./faq/">Frequently Asked Questions</a></li>
+            <li><a href="./blog/">Engineering Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Global Markets</h4>
+          <ul>
+            <li><a href="./markets/websites-for-businesses-in-usa/">United States</a></li>
+            <li><a href="./markets/websites-for-businesses-in-uk/">United Kingdom</a></li>
+            <li><a href="./markets/websites-for-businesses-in-uae/">UAE & Dubai</a></li>
+            <li><a href="./markets/websites-for-businesses-in-australia/">Australia</a></li>
+            <li><a href="./markets/websites-for-businesses-in-canada/">Canada</a></li>
+            <li><a href="./markets/websites-for-businesses-in-singapore/">Singapore</a></li>
+            <li><a href="./markets/websites-for-businesses-in-germany/">Deutschland (Germany)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="yr">2026</span> Prajin and Team · Theni, Tamil Nadu, India. All rights reserved.</span>
+        <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+          <a href="./privacy/">Privacy Policy</a>
+          <a href="./terms/">Terms of Service</a>
+          <a href="./sitemap.xml">XML Sitemap</a>
+          <a href="https://www.linkedin.com/in/prajin-dezaa-a3469543b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/prajin_studio.in/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61594798122881" target="_blank" rel="noopener" aria-label="Prajin Studio on Facebook">Facebook</a>
+        </div>
+      </div>
     </div>
   </footer>
-  <a class="wa mag" id="wa" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+
+  <!-- Floating Authentic WhatsApp Button -->
+  <a class="wa mag" id="wa" href="https://wa.me/{{WHATSAPP}}?text=Hi%20Prajin%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Prajin and Team on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="#ffffff" aria-hidden="true">
       <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
     </svg>
     <span class="wa-tooltip"><span class="wa-online"></span>Chat on WhatsApp</span>
   </a>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
-  <script>
-    /* ===== CONTENT — edit here ===== */
-    const CFG = { wa: '919360970236', email: 'prajindezaa142@gmail.com', linkedin: 'https://www.linkedin.com/in/prajin-dezaa-a3469543b?utm_source=share_via&utm_content=profile&utm_medium=member_android', instagram: 'https://www.instagram.com/prajin_studio.in/"card rv"><div class="chip" aria-hidden="true">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p></article>`).join('');
-    $('#workList').innerHTML = WORK.map(w => `<article class="card case rv"><div class="vis"><div class="phone"><img src="${IMG[w.imgs[0]]}" alt="${w.name} screenshot" loading="lazy" width="400" height="800"></div><div class="phone b"><img src="${IMG[w.imgs[1]]}" alt="${w.name} second screen" loading="lazy" width="400" height="800"></div></div><div><p class="tag">${w.tag}</p><h3>${w.name}</h3><dl><div><dt>Problem</dt><dd>${w.problem}</dd></div><div><dt>Solution</dt><dd>${w.solution}</dd></div><div><dt>Key features</dt><dd>${w.feat}</dd></div></dl><div class="pills">${w.tech.map(t => `<span>${t}</span>`).join('')}</div><a class="btn p s mag" href="${w.url}" target="_blank" rel="noopener">Visit ${w.url.replace('https://', '')} ↗</a></div></article>`).join('');
-    $('#tl').insertAdjacentHTML('beforeend', STEPS.map(s => `<div class="card step rv"><small>${s[0]}</small><h3>${s[1]}</h3><p>${s[2]}</p></div>`).join(''));
-    $('#tests').innerHTML = TESTS.map(t => `<figure class="card rv"><q>${t[0]}</q><b contenteditable="false">${t[1]}</b><span>${t[2]}</span></figure>`).join('');
-    $('#faq').innerHTML = FAQ.map(f => `<details class="rv"><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('');
-    $('#form').onsubmit = e => { e.preventDefault(); open(wa(`Hi Prajin, I'm ${$('#fn').value}. ${$('#fm').value}`), '_blank') };
-
-    /* theme */
-    const th = $('#theme'), root = document.documentElement;
-    let mode = 'dark'; try { mode = localStorage.getItem('t') || (matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark') } catch (e) { }
-    root.dataset.theme = mode; th.onclick = () => { mode = mode == 'dark' ? 'light' : 'dark'; root.dataset.theme = mode; try { localStorage.setItem('t', mode) } catch (e) { } };
-    const bg = $('#bg'), lks = $('#links');
-    function menu(o) { lks.classList.toggle('o', o); bg.setAttribute('aria-expanded', o); bg.textContent = o ? '✕' : '☰'; bg.setAttribute('aria-label', o ? 'Close menu' : 'Open menu') }
-    bg.onclick = () => menu(!lks.classList.contains('o'));
-    $$('#links a').forEach(a => a.addEventListener('click', () => menu(false)));
-    addEventListener('keydown', e => { if (e.key == 'Escape' && lks.classList.contains('o')) { menu(false); bg.focus() } });
-    document.addEventListener('click', e => { if (lks.classList.contains('o') && !e.target.closest('header nav')) menu(false) });
-    addEventListener('resize', () => { if (innerWidth > 900) menu(false) });
-
-    /* ripple + spotlight + tilt (no library needed) */
-    $$('.btn').forEach(b => b.addEventListener('click', e => { const r = b.getBoundingClientRect(), s = Math.max(r.width, r.height), d = document.createElement('span'); d.className = 'rip'; d.style.cssText = `width:${s}px;height:${s}px;left:${e.clientX - r.left - s / 2}px;top:${e.clientY - r.top - s / 2}px`; b.appendChild(d); setTimeout(() => d.remove(), 600) }));
-    document.addEventListener('pointermove', e => { const c = e.target.closest && e.target.closest('.card'); if (c) { const r = c.getBoundingClientRect(); c.style.setProperty('--mx', e.clientX - r.left + 'px'); c.style.setProperty('--my', e.clientY - r.top + 'px') } });
-    if (!RM && matchMedia('(hover:hover)').matches) {
-      $$('.case,.tilt').forEach(c => { c.addEventListener('pointermove', e => { const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height; c.style.transform = `perspective(900px) rotateY(${(x - .5) * 8}deg) rotateX(${(.5 - y) * 8}deg)`; c.style.setProperty('--gx', x * 100 + '%'); c.style.setProperty('--gy', y * 100 + '%') }); c.addEventListener('pointerleave', () => { c.style.transition = 'transform .5s'; c.style.transform = ''; setTimeout(() => c.style.transition = '', 500) }) });
-      const cu = $('.cur'), dt = $('.dot'); let mx = 0, my = 0, cx = 0, cy = 0;
-      addEventListener('pointermove', e => { mx = e.clientX; my = e.clientY; dt.style.transform = `translate(${mx}px,${my}px)` });
-      (function f() { cx += (mx - cx) * .18; cy += (my - cy) * .18; cu.style.transform = `translate(${cx}px,${cy}px)`; requestAnimationFrame(f) })();
-      $$('a,button,summary,input,textarea').forEach(a => { a.addEventListener('pointerenter', () => cu.classList.add('h')); a.addEventListener('pointerleave', () => cu.classList.remove('h')) });
-      $$('.mag').forEach(m => { m.addEventListener('pointermove', e => { const r = m.getBoundingClientRect(); m.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .25}px,${(e.clientY - r.top - r.height / 2) * .35}px)` }); m.addEventListener('pointerleave', () => m.style.transform = '') });
-    } else document.body.classList.remove('nc');
-
-    /* smooth scroll + scroll animations */
-    let L; if (window.Lenis && !RM) { L = new Lenis({ lerp: .09 }); (function r(t) { L.raf(t); requestAnimationFrame(r) })(0) }
-    $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => { const t = $(a.getAttribute('href')); if (t) { e.preventDefault(); L ? L.scrollTo(t, { offset: -70 }) : t.scrollIntoView({ behavior: RM ? 'auto' : 'smooth' }) } }));
-    const bar = $('#bar'); let P = 0;
-    function sc() { document.querySelector('header nav').classList.toggle('sc', scrollY > 20); const h = document.documentElement.scrollHeight - innerHeight; P = h > 0 ? scrollY / h : 0; bar.style.transform = `scaleX(${P})`; $('#gl').style.opacity = Math.max(.28, 1 - scrollY / (innerHeight * 1.1)); }
-    addEventListener('scroll', sc, { passive: true }); sc();
-    const secs = $$('main section[id]'), lk = $$('#links a');
-    new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) lk.forEach(a => a.classList.toggle('on', a.hash == '#' + e.target.id)) }), { rootMargin: '-45% 0px -50%' }).observe && secs.forEach(s => new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) lk.forEach(a => a.classList.toggle('on', a.hash == '#' + e.target.id)) }), { rootMargin: '-45% 0px -50%' }).observe(s));
-
-    function counts() { $$('[data-n]').forEach(el => { const n = +el.dataset.n, s = el.dataset.s || ''; if (!G || RM) { el.textContent = n + s; return } const o = { v: 0 }; G.to(o, { v: n, duration: 2, ease: 'power2.out', delay: .6, onUpdate: () => el.textContent = Math.round(o.v) + s }) }) }
-    function start() {
-      counts();
-      if (!G || RM) return;
-      root.classList.add('anim'); G.registerPlugin(ScrollTrigger);
-      G.from('.ln>span', { yPercent: 110, duration: 1.1, stagger: .12, ease: 'power4.out' });
-      G.from('.hero .badge,.hero .lead,.cta,.stats,.hero .me', { y: 30, opacity: 0, duration: 1, stagger: .12, delay: .5, ease: 'power3.out' });
-      ScrollTrigger.batch('.rv', { start: 'top 90%', once: true, onEnter: b => G.to(b, { opacity: 1, y: 0, stagger: .09, duration: .9, ease: 'power3.out' }) });
-      G.to('#tl', { '--p': 1, scrollTrigger: { trigger: '#tl', start: 'top 70%', end: 'bottom 70%', scrub: true } }); G.set('#tl', { '--p': 0 });
-    }
-    /* intro (<1.5s) */
-    const intro = $('#intro');
-    if (G && !RM) G.to(intro, { opacity: 0, delay: .9, duration: .5, onComplete: () => { intro.remove(); start() } }); else { intro.remove(); start() }
-
-    /* ===== 3D hero scene (Three.js) ===== */
-    (function () {
-      if (!window.THREE || RM) return;
-      const T = THREE, cv = $('#gl'), r = new T.WebGLRenderer({ canvas: cv, alpha: true, antialias: !MOB });
-      r.setPixelRatio(Math.min(devicePixelRatio, MOB ? 1.5 : 2));
-      const s = new T.Scene(), cam = new T.PerspectiveCamera(50, 1, .1, 100); cam.position.z = 7;
-      const g = new T.Group(); s.add(g); const col = new T.Color('#38bdf8');
-      const wire = new T.Mesh(new T.IcosahedronGeometry(1.7, 1), new T.MeshBasicMaterial({ color: col, wireframe: true, transparent: true, opacity: .65 }));
-      const core = new T.Mesh(new T.IcosahedronGeometry(1.15, 0), new T.MeshStandardMaterial({ color: 0x151a5e, emissive: col, emissiveIntensity: .55, roughness: .25, metalness: .8, flatShading: true }));
-      const knot = new T.Mesh(new T.TorusKnotGeometry(2.4, .025, 220, 8, 2, 3), new T.MeshBasicMaterial({ color: 0xa855f7 }));
-      g.add(wire, core, knot);
-      s.add(new T.AmbientLight(0x6666ff, .6)); const pl = new T.PointLight(0x38bdf8, 2, 20); pl.position.set(3, 3, 4); s.add(pl);
-      function tex(fn) { const c = document.createElement('canvas'); c.width = c.height = 128; const x = c.getContext('2d'); fn(x); return new T.CanvasTexture(c) }
-      const glow = new T.Sprite(new T.SpriteMaterial({ map: tex(x => { const q = x.createRadialGradient(64, 64, 0, 64, 64, 64); q.addColorStop(0, 'rgba(99,102,241,.8)'); q.addColorStop(1, 'rgba(99,102,241,0)'); x.fillStyle = q; x.fillRect(0, 0, 128, 128) }), blending: T.AdditiveBlending, depthWrite: false })); glow.scale.set(8, 8, 1); g.add(glow);
-      const N = MOB ? 250 : 700, pa = new Float32Array(N * 3); for (let i = 0; i < N; i++) { const a = Math.random() * 6.28, d = 2.6 + Math.random() * 4, y = (Math.random() - .5) * 5; pa.set([Math.cos(a) * d, y, Math.sin(a) * d], i * 3) }
-      const pg = new T.BufferGeometry(); pg.setAttribute('position', new T.BufferAttribute(pa, 3));
-      const pts = new T.Points(pg, new T.PointsMaterial({ size: .04, color: 0x9ad8ff, transparent: true, opacity: .8, blending: T.AdditiveBlending, depthWrite: false })); g.add(pts);
-      const lab = [];['</>', '{ }', 'APP', 'www', '⚡'].forEach((t, i) => { const m = new T.Sprite(new T.SpriteMaterial({ map: tex(x => { x.font = '700 54px monospace'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.shadowColor = '#38bdf8'; x.shadowBlur = 16; x.fillStyle = '#fff'; x.fillText(t, 64, 64) }), transparent: true, depthWrite: false })); m.scale.set(1.1, 1.1, 1); m.userData = { a: i * 1.256, r: 3.2 + i % 2 * .6, y: (i - 2) * .6 }; g.add(m); lab.push(m) });
-      const pal = ['#38bdf8', '#6366f1', '#a855f7', '#38bdf8'].map(c => new T.Color(c)), cc = new T.Color();
-      let tx = 0, ty = 0, rx = 0, ry = 0, vis = true;
-      addEventListener('pointermove', e => { tx = e.clientX / innerWidth - .5; ty = e.clientY / innerHeight - .5 });
-      function rs() { r.setSize(innerWidth, innerHeight, false); cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix() } rs(); addEventListener('resize', rs);
-      document.addEventListener('visibilitychange', () => vis = !document.hidden);
-      const clk = new T.Clock();
-      (function loop() {
-        requestAnimationFrame(loop); if (!vis) return; const t = clk.getElapsedTime(), p = P;
-        rx += (ty * .6 - rx) * .05; ry += (tx * .8 - ry) * .05;
-        const wide = innerWidth > 900, bx = wide ? 2.6 : 0, by = wide ? 0 : 2.1, sc = wide ? 1 : .7;
-        g.position.x += ((bx + Math.sin(p * Math.PI * 3) * (wide ? 1.4 : .6)) - g.position.x) * .06; g.position.y += ((by - p * 2) - g.position.y) * .06;
-        g.scale.setScalar(sc * (1 + Math.sin(p * Math.PI * 2) * .25));
-        g.rotation.set(rx + p * 4, ry + t * .15 + p * 6, 0); core.rotation.y = t * .4; wire.rotation.x = -t * .12; knot.rotation.z = t * .2;
-        const k = p * 3, i = Math.min(2, Math.floor(k)); cc.copy(pal[i]).lerp(pal[i + 1], k - i);
-        wire.material.color.copy(cc); core.material.emissive.copy(cc); pl.color.copy(cc);
-        pts.rotation.y = t * .05; lab.forEach(m => { const a = m.userData.a + t * .35; m.position.set(Math.cos(a) * m.userData.r, m.userData.y + Math.sin(t + a) * .2, Math.sin(a) * m.userData.r) });
-        r.render(s, cam)
-      })();
-    })();
-  </script>
+  <!-- Deferred Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/chatbot.js" defer></script>
 </body>
-
 </html>
