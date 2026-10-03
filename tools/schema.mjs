@@ -39,6 +39,7 @@ export function generateSchemaGraph({
     "sameAs": [
       "https://www.linkedin.com/in/prajin-dezaa-a3469543b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       "https://www.instagram.com/cricketerprajin06?stkn=Zmlvamc1M2wyZnR4",
+        "https://www.facebook.com/profile.php?id=61594798122881",
       "{{GITHUB}}"
     ],
     "knowsAbout": [

@@ -218,12 +218,13 @@ export function renderFooter(pagePath) {
 
       <div class="footer-bottom">
         <span>© <span id="yr">${new Date().getFullYear()}</span> Prajin and Team · Theni, Tamil Nadu, India. All rights reserved.</span>
-        <div style="display:flex; gap:16px; align-items:center;">
+        <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
           <a href="${rootRel}privacy/">Privacy Policy</a>
           <a href="${rootRel}terms/">Terms of Service</a>
           <a href="${rootRel}sitemap.xml">XML Sitemap</a>
           <a href="${config.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
           <a href="${config.instagram}" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61594798122881" target="_blank" rel="noopener" aria-label="Prajin Studio on Facebook">Facebook</a>
         </div>
       </div>
     </div>

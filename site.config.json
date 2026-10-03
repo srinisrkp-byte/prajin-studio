@@ -19,17 +19,72 @@
   "instagram": "https://www.instagram.com/cricketerprajin06?stkn=Zmlvamc1M2wyZnR4",
   "defaultLang": "en",
   "languages": [
-    { "code": "en", "name": "English", "dir": "ltr", "locale": "en_US" },
-    { "code": "hi", "name": "हिन्दी (Hindi)", "dir": "ltr", "locale": "hi_IN" },
-    { "code": "ta", "name": "தமிழ் (Tamil)", "dir": "ltr", "locale": "ta_IN" },
-    { "code": "ar", "name": "العربية (Arabic)", "dir": "rtl", "locale": "ar_AE" },
-    { "code": "es", "name": "Español (Spanish)", "dir": "ltr", "locale": "es_ES" },
-    { "code": "fr", "name": "Français (French)", "dir": "ltr", "locale": "fr_FR" },
-    { "code": "de", "name": "Deutsch (German)", "dir": "ltr", "locale": "de_DE" },
-    { "code": "pt-br", "name": "Português (Brasil)", "dir": "ltr", "locale": "pt_BR" },
-    { "code": "id", "name": "Bahasa Indonesia", "dir": "ltr", "locale": "id_ID" },
-    { "code": "ms", "name": "Bahasa Melayu", "dir": "ltr", "locale": "ms_MY" },
-    { "code": "ja", "name": "日本語 (Japanese)", "dir": "ltr", "locale": "ja_JP" }
+    {
+      "code": "en",
+      "name": "English",
+      "dir": "ltr",
+      "locale": "en_US"
+    },
+    {
+      "code": "hi",
+      "name": "हिन्दी (Hindi)",
+      "dir": "ltr",
+      "locale": "hi_IN"
+    },
+    {
+      "code": "ta",
+      "name": "தமிழ் (Tamil)",
+      "dir": "ltr",
+      "locale": "ta_IN"
+    },
+    {
+      "code": "ar",
+      "name": "العربية (Arabic)",
+      "dir": "rtl",
+      "locale": "ar_AE"
+    },
+    {
+      "code": "es",
+      "name": "Español (Spanish)",
+      "dir": "ltr",
+      "locale": "es_ES"
+    },
+    {
+      "code": "fr",
+      "name": "Français (French)",
+      "dir": "ltr",
+      "locale": "fr_FR"
+    },
+    {
+      "code": "de",
+      "name": "Deutsch (German)",
+      "dir": "ltr",
+      "locale": "de_DE"
+    },
+    {
+      "code": "pt-br",
+      "name": "Português (Brasil)",
+      "dir": "ltr",
+      "locale": "pt_BR"
+    },
+    {
+      "code": "id",
+      "name": "Bahasa Indonesia",
+      "dir": "ltr",
+      "locale": "id_ID"
+    },
+    {
+      "code": "ms",
+      "name": "Bahasa Melayu",
+      "dir": "ltr",
+      "locale": "ms_MY"
+    },
+    {
+      "code": "ja",
+      "name": "日本語 (Japanese)",
+      "dir": "ltr",
+      "locale": "ja_JP"
+    }
   ],
   "verification": {
     "google": "",
@@ -41,5 +96,6 @@
   "analytics": {
     "googleAnalyticsId": "G-EC4S4LBP3K",
     "indexNowKey": "prajinindexnowkey2026"
-  }
+  },
+  "facebook": "https://www.facebook.com/profile.php?id=61594798122881"
 }
