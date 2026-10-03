@@ -34,7 +34,7 @@ export function generatePillarPages() {
         </p>
         <ul>
           <li><a href="https://www.linkedin.com/in/prajin-dezaa-a3469543b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" style="color:var(--c1); text-decoration:underline;">LinkedIn Profile</a></li>
-          <li><a href="https://www.instagram.com/cricketerprajin06?stkn=Zmlvamc1M2wyZnR4" target="_blank" rel="noopener" style="color:var(--c1); text-decoration:underline;">Instagram Profile</a></li>
+          <li><a href="https://www.instagram.com/prajin_studio.in/" target="_blank" rel="noopener" style="color:var(--c1); text-decoration:underline;">Instagram Profile</a></li>
           <li><a href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener" style="color:var(--c1); text-decoration:underline;">Direct WhatsApp (+91 93609 70236)</a></li>
         </ul>
       `

@@ -8,10 +8,7 @@ Website: {{DOMAIN}}/
 WhatsApp: +91 93609 70236 (wa.me/{{WHATSAPP}})
 Email: {{EMAIL}}
 LinkedIn: https://www.linkedin.com/in/prajin-dezaa-a3469543b
-Instagram: https://www.instagram.com/cricketerprajin06
-
-## Value Proposition
-"I build websites & apps that grow businesses." 
+Instagram: https://www.instagram.com/prajin_studio.in/"I build websites & apps that grow businesses." 
 Specializing in high-performance corporate websites, custom B2B ordering apps, mobile-first e-commerce stores, Android PWAs, and technical SEO with sub-second page loads.
 
 ## Key Services

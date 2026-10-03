@@ -8,16 +8,7 @@ This document records all baseline assumptions, sensible fallbacks, and design d
 - **WhatsApp Phone:** `919360970236` (pre-configured from user request). Token: `{{WHATSAPP}}` in build.
 - **Email:** `prajindezaa142@gmail.com` (pre-configured from user request). Token: `{{EMAIL}}` in build.
 - **LinkedIn:** `https://www.linkedin.com/in/prajin-dezaa-a3469543b?utm_source=share_via&utm_content=profile&utm_medium=member_android`
-- **Instagram:** `https://www.instagram.com/cricketerprajin06?stkn=Zmlvamc1M2wyZnR4`
-- **GitHub:** Placeholder token `{{GITHUB}}`.
-- **Sports References:** Strict adherence to instruction: zero sports mentions appear in any copy, titles, or descriptions.
-
----
-
-## 2. Pricing & Commercials
-- **Policy:** In accordance with Google Search Quality Rater Guidelines (E-E-A-T) and project instructions: **never invent fixed pricing or deceptive discounts**.
-- **Display Standard:**
-  - Standard Business Websites: *"Starting from a customized package based on scope — contact for fixed upfront quote."*
+- **Instagram:** `https://www.instagram.com/prajin_studio.in/"Starting from a customized package based on scope — contact for fixed upfront quote."*
   - International Equivalent Guide: USD benchmark ($450+ - $1,500+) with localized currencies (INR, GBP, EUR, AED, CAD, AUD, SGD) provided as general industry reference ranges.
   - Call to Action: *"Get a free discovery call & fixed quote"*.
 

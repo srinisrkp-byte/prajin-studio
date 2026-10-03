@@ -3,8 +3,7 @@
 A dark, cinematic, multi-page international developer portfolio and digital platform engineered for global search visibility (Google, Bing, Yandex, Baidu, Naver, and AI engines).
 
 **Owner:** Prajin Dezaa — Theni, Tamil Nadu, India  
-**LinkedIn:** [prajin-dezaa-a3469543b](https://www.linkedin.com/in/prajin-dezaa-a3469543b) · **Instagram:** [@cricketerprajin06](https://www.instagram.com/cricketerprajin06)  
-**Positioning:** *"I build websites & apps that grow businesses."*
+**LinkedIn:** [prajin-dezaa-a3469543b](https://www.linkedin.com/in/prajin-dezaa-a3469543b) · **Instagram:** [@cricketerprajin06](https://www.instagram.com/prajin_studio.in/"I build websites & apps that grow businesses."*
 
 ---
 
